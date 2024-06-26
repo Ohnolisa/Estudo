@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Dados</title>
+    <link rel="stylesheet" href="Links Aulas/w3.css">
+    <style>
+        mark { 
+            background-color: rgb(255, 178, 46);
+        }
+        body {
+            background-color: rgb(150, 177, 168);
+            color: aliceblue;
+            font: normal 15pt arial; /*Comentário em CSS*/
+           }
+           h1 {
+               color: rgb(66, 42, 88);
+           }
+           p {
+            color: rgb(30, 29, 29);
+            text-indent: 35px;
+            text-align: justify;
+            letter-spacing: 0,5px;
+           }
+    </style>
+</head>
+<body> 
+    <br>
+    <div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a></div> 
+<div class="w3-center">
+    <h1>Manipulação de dados.</h1> <br>
+    <a href="file:///D:/Aulas/JacaScript/Aula   %2006/ex003.html">Terceira aula</a>
+</div>
+        <pre>
+        <code>
+  <p style="background-color:LightGray" >
+      &lt;script&gt;
+      //Number.parseInt(n) ou Number.parseFloat(n), é um atributo para converter string para número. Uma manipulão de dados
+      //Number(n) é tanto um número inteiro quanto um número real
+      var n1 = Number(window.prompt('digite um número: ')) //esse comando retorna como uma string. *Característica do comando*.
+      var n2 = Number(window.prompt('Digite outro número: ')) //string
+      var s = n1 + n2
+      window.alert (`A soma entre ${n1} e ${n2} é igual à ${s}`) //template string
+      // + serve para adição (number + number) = para entender que é uma adição
+      // + serve para concatenação (String + String) para entender o que é uma concatenação
+      &lt;script&gt;
+  </p>
+        </code>
+        </pre>
+        
+        
+     
+        <div class="w3-center">
+            <h1>Explicação </h1>
+            <h2>Manipulação de dados</h2>
+        </div>
+        <div class="w3-container">
+    <p>Formatando String para Número <br></p>
+    <p>Number.parseInt(n) para número inteiro (1,2,3,4...) </p>
+    <p>Number.parseFloat(n) para números reais (4.5, 5.6, 0.5...)</p>
+    <p>Number(n) serve para ambos</p>
+    <p>String para number</p>
+    <p>String(n)</p>
+    <p>n.toString()</p>
+    <p>Formatação de String: <br> <br>
+    Concatenação: 'Estou aprendendo' + s <br>
+    template string: `Eu estou aprendendo ${s} <br>
+    s.length: quantos caracteres tem a string
+    s.toUpperCase() Tudo para 'MAIÚSCULAS'
+    s.toLowerCase () tudo para 'minúsculas'
+            </p>
+        </div>
+   
+        <hr>
+        <h1></h1>
+<br>
+        <div class="w3-center">
+                <mark style="background-color: rgb(162, 131, 191)">
+                    document.write escreve na tela
+                </mark>
+        </div>
+            <pre>
+                <code>
+        <p style="background-color:LightGray">
+            &lt;script&gt;
+            var nome = window.prompt('Qual é o seu nome?')
+            document.write(`Olá, &lt;strong&gt; ${nome}!&lt;/Strong&gt; Seu nome tem ${nome.length} letras.&lt;br&gt;`)
+            document.write(`Seu Nome em maiúsculas é ${nome.toUpperCase()}&lt;br&gt;`)
+            document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+            &lt;script&gt;
+        </p>
+            
+                </code>
+            </pre>
+
+    <a href="file:///D:/Aulas/JacaScript/Aula%2006/ex004.html">Quarta aula</a>
+    <br> <br> <br>
+    <div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a></div> <br>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Links Aulas/w3.css">
+    <title>Operadores aritmeticos</title>
+    <style>
+        mark { 
+            background-color: rgb(255, 178, 46);
+        }
+        body {
+            background-color: rgb(150, 177, 168);
+            color: aliceblue;
+            font: normal 15pt arial; /*Comentário em CSS*/
+           }
+           h1 {
+               color: rgb(66, 42, 88);
+           }
+           p {
+            color: rgb(30, 29, 29);
+            letter-spacing: 0,5px;
+           }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a></div>
+    <div class="w3-center">
+        <h1>Quinta aula!!</h1>
+        <h2>Aula sobre operadores!</h2>
+        <h3>ARITMETICOS e Atribuição</h3>
+        <a href="file:///D:/Aulas/JacaScript/Aula%2006/operadores.html">Quinta aula</a>
+    </div>
+<div>
+        <pre>
+            <code>
+        ARITMETICOS: operadores <br>
+        5 + 2 -> soma normal = 7 <br>
+        5 - 2 -> subtração normal = 3 <br>
+        5 * 2 -> multiplicação = 10 <br>
+        5 / 2 -> Divisão REAL, divisão de numeros reais, que leva a virgula = 2,5 <br>
+        5 % 2 -> Divisão INTEIRA, divisão que não leva numeros reais e virgulas = 1 <br>
+        5 ** 2 -> Potencia, significa: 5 ao quadrado = 25  <br>
+            </code>
+        </pre>
+</div>
+    <hr>
+    <div class="w3-center">
+        <h1> A ordem de precedência entre os operadores </h1>
+    </div>
+
+    <pre>
+        <code>
+        () -> Primeiro lugar os parenteses <br>
+        ** -> depois dos parenteses as potencias <br>
+        *, /, % -> Em seguida das potencias, temos a multiplicação, divisão e o resto da divisão <br>
+        +, - -> e por fim as somas e subtrações.
+        </code>
+    </pre>
+<hr>
+    <div class="w3-center">
+        <h1>Atribuição simples</h1>
+        <h3>Sempre cumprindo a ordem de precedências.</h3>
+    </div>
+
+     <div>
+         <pre>
+             <code>
+         Excemplos: <br>
+         var <mark>a</mark> = 5 + 3: <br>
+         variavel a recebe o valor de 5 mais 3 <br>
+         5 mais 3 é igual a 8. pegamos esse 8 e jogamos na var a<br>
+         <hr>
+         var <mark>b</mark> = a % 5: <br>
+         a variavel b recebe o valor de a(8) dividindo 5.
+         a(8) dividido por 5 é 3, logo o valor de b é 3<br>
+         <hr>
+         var <mark>c</mark> = 5 * b ** 2: <br>
+         var c recebe o valor de 5 vezes b elevado a 2 <br>
+         o valor de b(3), 3 ao quadrado é 9, 9 vezes 5: 45<br>
+         <hr>
+         var <mark>d</mark> = 10 - a / 2: <br>
+         var d recebe 10 menos o valor de a(8) dividido por 2. <br>
+         a(8) dividido por 2 é 4, 10 - 4 da 6<br>
+         <hr>
+         var <mark>e</mark> = 6 * 2 /d: <br>
+         var recebe 6 vezes 2 dividido por d(6). <br>
+         6 vezes 2 é 12, 12 dividido por d(6) é 2<br>
+         <hr>
+         var <mark>f</mark> = b % e + 4 / e: <br>
+         var recebe b(3) dividido por e(2) mais 4 dividido por e(2). <br>
+         b(3) dividido por e(2) é 1, 4 dividido por e(2) é 2. 1 + 2 é 3<br>
+             </code>
+         </pre>
+     </div>
+    <hr>
+    <div class="w3-container"><img src="Imagens/Atribuição simples.jpg" alt="Atribuição simples"></div>
+    <hr>
+    <div class="w3-center">
+        <h1>Auto-atribuições</h1>
+    </div>
+
+        <div>
+            <pre>
+                <code>
+        var n = 3 <br>
+        variavel n recebe 3. Logo n é igual a 3. <br>
+        <hr>
+        n = n + 4 <br>
+        n recebe n mais 4. <br>
+        Fazer a conta e depois jogar o valor como resultado do primeiro n. <br>
+        n(3) mais 4 = 7. logo o valor de n passa a ser o 7. <br>
+        <hr>
+        n = n - 5 <br>
+        n recebe n menos 5 <br>
+        n(7) - 5 = 2. logo n passa a valer 2. <br>
+        <hr>
+        n = n * 4 <br>
+        n recebe n vezes 4 <br>
+        n(2) * 4 = 8. logo o n passa a valer 8 <br>
+        <hr>
+        n = n / 2 <br>
+        n recebe n dividido por 2 <br>
+        n(8) / 2 = 4. logo o n passa a valer 4. <br>
+        <hr>
+        n = n **2 <br>
+        n recebe n elevado a 2 <br>
+        n(4) ** 2 = 16. logo n passa a valer 16 <br>
+        <hr>
+        n = n % 5 <br>
+        n recebe n dividido por 5 <br>
+        n(16) % 5 = 1. logo n passa a valer 1. <br>
+                </code>
+            </pre>          
+        </div>
+    <hr>
+    <div class="w3-center">
+        <h1>Simplificando</h1>
+    </div>
+    
+        <pre>
+            <code>
+        Escrever a variavel de forma resumida 
+        Exemplo:
+        n = n + 4. de forma resumida ficaria: <mark>n+=4</mark>. <br>
+        Esse ex só serve se a mesma variavel receber ela mesma mais o numero 4. <br>
+        <hr>
+        n = n - 5. Ficaria <mark>n-=5</mark> <br>
+        n = n * 4. Ficaria <mark>n*=4</mark> <br>
+        n = n / 2. ficaria <mark>n/=2</mark> <br>
+        n = n ** 2. Ficaria <mark>n**=2</mark> <br>
+        n = n % 5. Ficaria <mark>n%=5</mark> <br>
+            </code>
+        </pre>
+        <hr>
+        <div class="w3-center">
+            <h1>Incremento</h1>
+        </div>
+        <pre>
+            <code>
+        var x = 5 <br>
+        o valor de x é 5. <br>
+        <hr>
+        x = x + 1 <br>
+        x + 1 = 6. x vale 6. <br>
+        x+=1 : simplificado <br>
+        x ++ incrementado
+            </code>
+        </pre>
+
+<div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a> </div> <br><br>
+</body>
+</html>

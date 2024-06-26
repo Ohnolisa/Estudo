@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Links Aulas/w3.css">
+    <title>Operadores Relacionais, Logicos e ternarios</title>
+    <style>
+        mark { 
+            background-color: rgb(161, 102, 216);
+        }
+        body {
+            background-color: rgb(150, 177, 168);
+            color: aliceblue;
+            font: normal 15pt arial; /*Comentário em CSS*/
+           }
+           h1 {
+               color: rgb(66, 42, 88);
+           }
+           
+    </style>
+</head>
+<body>
+    <br>
+    <div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a></div>
+<div class="w3-center">
+        <h1>Aula Operadores parte 2</h1>
+    <h2>Relacionais, Lógicos e Ternário</h2>
+<h3>Relacionais</h3>
+</div>
+<div class="w3-container">
+    <p>O resultado dessa expressão (Relacionais) sera sempre booleano, ou seja, verdadeiro ou falso!</p>
+    <ul type="disc">
+        <li>> maior</li>
+        <li>< menor</li>
+        <li>>= maior ou igual</li>
+        <li><= menor ou igual</li>
+        <li>== igual</li>
+        <li>!= diferente</li>
+        <li>=== identicos</li>
+        <li>!== desigual restrito</li>
+    </ul>
+    <hr>
+    <ul type="disc">
+    
+        <li>5 > 2 -> True </li>
+        <ul> <li>O valor 5 é maior que o 2? sim, verdadeiro, e por ai vai</li></ul>
+        <li>7 > 4 -> false</li>
+        <li>8 >= 8 -> True</li>
+        <li>9 <= 7 -> false </li>
+        <li>5 == 5 -> true</li>
+        <li> 4 != 4 -> false </li>
+    
+    </ul>
+    <p>Também podendo misturar os valores relacionais com os ARITMETICOS, mas sempre resolvendo os ARITMETICOS primeiro</p>
+    <p>ex: var a = 8 <br>
+    var b = 15 <br>
+    a(8) < b(15) = true <br>
+    a(8) > b(15) = false <br>
+    a(8) <= b(15) - 10 (Fazer primeiro o valor aritmetico que seria, b - 10, 15 - 10= 5, logo b é igual a 5.), = false, 8 é maior que 5.
+    </p>
+</div>
+<hr>
+<div class="w3-center">
+    <h1>Identidade</h1>
+</div>
+<div class="w3-container">
+    <p>
+        5 == 5 -> True <br>
+        5 == '5' -> true, nesse caso ele não testa o valor da identidade e sim a grandeza. <br>
+        5 === '5' -> false, nesse sinal ele indica igualdade, identicos, 5 não é identico a '5', o valor é o mesmo mas a identidade não. <br>
+    </p>
+</div>
+<hr>
+<div class="w3-center">
+    <h1>Operadores Lógicos</h1>
+</div>
+
+<div class="w3-container">
+    <p>que são eles:</p>
+    <ul>
+        <li><mark>! -> Negação</mark></li>
+        <ul type="circle">
+            <li>
+                ! é um operador unario, ou seja, so tem um operando isso é, ou é true ou é false <br> 
+                ! True -> false (uma coisa que não é verdadeira é falsa) <br>
+                ! false -> tru1e (uma coisa que é falsa é verdadeira)
+            </li>
+        </ul>
+        <li><mark>&& -> Conjunção</mark></li>
+        <ul type="circle">
+            <li>
+                && é um operador binario, isso é: dois operadores logicos <br>
+                true && true -> true <br>
+                true && false -> false <br>
+                false && true -> false <br>
+                false && false -> false <br>
+            </li>
+        </ul>
+        <li><mark>|| -> Disjunção</mark></li>
+        <ul type="circle">
+            <li>
+            Também outro operador binario que faz operações lógicas. <br>
+            basta que um seja verdadeiro para o resultado ser verdadeiro. <br>
+            true || True -> true <br>
+            true || False -> True <br>
+            false || True -> true <br>
+            false || false -> false <br>
+            </li>
+        </ul>
+    </ul>
+</div>
+
+<div class="w3-center">
+    <h2>Colocar os operadores em expressões:</h2>
+</div>
+<p>
+    <pre>
+        <code>
+        <p style= "color: black; background-color: lightgrey;" >
+            var a = 5 <br>
+            var b = 8 <br>
+            true && false = false <br>
+            true && true = true <br>
+            true || false = true <br>
+            false || false = false <br>
+            <mark style="background-color: rgb(67, 128, 233)">a > b</mark> <mark style="background-color: rgb(233, 229, 140)">&&</mark> <mark style="background-color: rgb(161, 104, 214)">b % 2</mark> == 0
+            (Aqui temos operadores <mark style="background-color: rgb(161, 104, 214)">aritmeticos</mark>, <mark style="background-color: rgb(67, 128, 233)">relacionais</mark> e <mark style="background-color: rgb(233, 229, 140)">lógicos</mark>), resolvendo sempre nessa ordem. <br>
+            falso. <br>
+            se tiver os mesmos operadores na mesma expressão a ordem é: <mark>! depois o && e por fim o ||</mark> <br>
+        </code>
+    </pre>
+    </p>
+    <div class="w3-center">
+        <h2><mark>Ordem de precedência entre os operadores</mark></h2>
+        <p>Operadores <mark style="background-color: rgb(161, 104, 214)">aritmeticos</mark>, <mark style="background-color: rgb(67, 128, 233)">relacionais</mark> e <mark style="background-color: rgb(233, 229, 140)">lógicos</mark> <br>
+        </p>
+    </div>
+<div class="w3-container"><img src="Imagens/PRECEDENCIA DE OPERADORES.jpg" alt="Operadores"></div>
+<hr>
+<div class="w3-center">
+    <h1>Operador Ternário</h1>
+</div>
+<pre>
+    <code>
+    Consiste em duas expressões: ? : 
+    teste ? true : false
+    É um teste em o que vai acontecer quando o teste foi verdadeiro e o que vai acontcer se o teste for false.
+    </code>
+</pre>
+<div class="w3-container"><a href="file:///D:/Aulas/JacaScript/Meu%20Resumo/01index.html#home"><img src="Imagens/btn-back.png" alt="Voltar"></a></div> <br><br>
+</body>
+</html>
